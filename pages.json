@@ -1,0 +1,340 @@
+{
+	"pages": [
+		// {
+		//     "path" : "pages/login/login",
+		//     "style" : {
+		// 		"app-plus":{
+		// 			"titleNView":false
+		// 		}
+		// 	}
+		// },
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "学习",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/class",
+			"style": {
+				"navigationBarTitleText": "课程",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/index/class-text",
+			"style": {
+				"navigationBarTitleText": "文字课程",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/class-video",
+			"style": {
+				"navigationBarTitleText": "视频课程",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/fullJob/index",
+			"style": {
+				"navigationBarTitleText": "全职岗位",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"backgroundColor": "#f8f8f8",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/partTimeJob/partTimeJob",
+			"style": {
+				// "navigationBarTitleText":"我的作品"
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"text": "\ue695",
+							"fontSize": "18px",
+							"fontSrc": "/static/iconfont.ttf",
+							"color": "#333333",
+							"colorPressed": "#333333"
+						}, {
+							"float": "right",
+							"text": "\ue61a",
+							"fontSize": "18px",
+							"fontSrc": "/static/iconfont.ttf",
+							"color": "#333333",
+							"colorPressed": "#333333"
+						}]
+					}
+				}
+			}
+		}
+		//      ,{
+		//          "path" : "pages/create/create",
+		//          "style" : {
+		// 	// "navigationBarTitleText":"发布作品",
+		// 	"app-plus":{
+		// 		"titleNView":{
+		// 			"buttons":[{
+		// 				"color":"#FB7299",
+		// 				"colorPressed":"#FB85A7",
+		// 				"float":"right",
+		// 				"fontSize":"14px",
+		// 				"text":"发布"
+		// 			}]
+		// 		}
+		// 	}
+		// }
+		//      }
+		//      ,{
+		//          "path" : "pages/user-video/user-video",
+		//          "style" : {
+		// 	// "navigationBarTitleText":"我的作品"
+		// }
+		//      }
+		//      ,{
+		//          "path" : "pages/user-fava/user-fava",
+		//          "style" : {
+		// 	// "navigationBarTitleText":"我的收藏"
+		// }
+		//      }
+		//      ,{
+		//          "path" : "pages/user-video-list/user-video-list",
+		//          "style" : {
+		// 	// "navigationBarTitleText":"视频列表"
+		// }
+		//      }
+		//      ,{
+		//          "path" : "pages/user-space/user-space",
+		//          "style" : {
+		// 	"app-plus":{
+		// 		"titleNView":{
+		// 			"type":"transparent",
+		// 			"buttons":[{
+		// 				"float":"right",
+		// 				"type":"menu"
+		// 			}]
+		// 		}
+		// 	}
+		// }
+		//      }
+	],
+	"subPackages": [{
+		"root": "pagesB", //文件夹名称，  pages文件夹同级新建一个就行
+		"pages": [{
+				"path": "detail-video/detail-video",
+				"style": {
+					"app-plus": {
+						"titleNView": false,
+						"subNVues": [{
+							"id": "top",
+							"path": "./pages/detail-video/subNVue/video",
+							"style": {
+								"position": "dock",
+								"dock": "top",
+								"width": "100%",
+								"height": "225px"
+							}
+						}]
+					}
+				}
+			},
+			{
+				"path": "office/office",
+				"style": {
+					"navigationBarTitleText": "全职岗位",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "office/company/company",
+				"style": {
+					"navigationBarTitleText": "公司简介",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "office/map/map",
+				"style": {
+					"navigationBarTitleText": "公司地址",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			}
+		]
+	}, {
+		"root": "pagesC", //文件夹名称，  pages文件夹同级新建一个就行
+		"pages": [{
+				"path": "resume/resume",
+				"style": {
+					"navigationStyle": "custom",
+					"app-plus": {
+						"titleNView": false
+					}
+				}
+			},
+			{
+				"path": "resume/personMessage",
+				"style": {
+					"navigationBarTitleText": "个人信息",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "resume/workExperience",
+				"style": {
+					"navigationBarTitleText": "工作经历",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "resume/personTag",
+				"style": {
+					"navigationBarTitleText": "个人标签",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "resume/itemExperience",
+				"style": {
+					"navigationBarTitleText": "项目经历",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "resume/eduExperience",
+				"style": {
+					"navigationBarTitleText": "教育经历",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "resume/post",
+				"style": {
+					"navigationBarTitleText": "求职期望",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"backgroundColor": "#f8f8f8"
+				}
+			}
+
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		// "navigationBarTitleText": "视频点播",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"usingComponents": { //这里为方便，全局引入了所有组件，也可以在某个page下单独引用某个组件
+			// "demo-block": "/wxcomponents/vant/demo-block/index",
+			// "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+			"van-area": "/wxcomponents/vant/area/index",
+			// "van-badge": "/wxcomponents/vant/badge/index",
+			// "van-badge-group": "/wxcomponents/vant/badge-group/index",
+			"van-button": "/wxcomponents/vant/button/index",
+			// "van-calendar": "/wxcomponents/vant/calendar/index",
+			// "van-card": "/wxcomponents/vant/card/index",
+			"van-cell": "/wxcomponents/vant/cell/index",
+			"van-cell-group": "/wxcomponents/vant/cell-group/index",
+			// "van-checkbox": "/wxcomponents/vant/checkbox/index",
+			// "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+			"van-col": "/wxcomponents/vant/col/index",
+			// "van-dialog": "/wxcomponents/vant/dialog/index",
+			"van-field": "/wxcomponents/vant/field/index",
+			// "van-goods-action": "/wxcomponents/vant/goods-action/index",
+			// "van-goods-action-icon": "/wxcomponents/vant/goods-action-icon/index",
+			// "van-goods-action-button": "/wxcomponents/vant/goods-action-button/index",
+			"van-icon": "/wxcomponents/vant/icon/index",
+			"van-loading": "/wxcomponents/vant/loading/index",
+			// "van-nav-bar": "/wxcomponents/vant/nav-bar/index",
+			// "van-notice-bar": "/wxcomponents/vant/notice-bar/index",
+			// "van-notify": "/wxcomponents/vant/notify/index",
+			// "van-panel": "/wxcomponents/vant/panel/index",
+			"van-popup": "/wxcomponents/vant/popup/index",
+			// "van-progress": "/wxcomponents/vant/progress/index",
+			// "van-radio": "/wxcomponents/vant/radio/index",
+			// "van-radio-group": "/wxcomponents/vant/radio-group/index",
+			"van-row": "/wxcomponents/vant/row/index",
+			"van-search": "/wxcomponents/vant/search/index",
+			// "van-slider": "/wxcomponents/vant/slider/index",
+			// "van-stepper": "/wxcomponents/vant/stepper/index",
+			// "van-steps": "/wxcomponents/vant/steps/index",
+			// "van-submit-bar": "/wxcomponents/vant/submit-bar/index",
+			"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index",
+			// "van-switch": "/wxcomponents/vant/switch/index",
+			"van-tab": "/wxcomponents/vant/tab/index",
+			"van-tabs": "/wxcomponents/vant/tabs/index",
+			"van-tabbar": "/wxcomponents/vant/tabbar/index",
+			"van-tabbar-item": "/wxcomponents/vant/tabbar-item/index",
+			"van-uploader": "/wxcomponents/vant/uploader/index",
+			"van-tag": "/wxcomponents/vant/tag/index",
+			"van-toast": "/wxcomponents/vant/toast/index",
+			"van-transition": "/wxcomponents/vant/transition/index"
+			// "van-tree-select": "/wxcomponents/vant/tree-select/index",
+			// "van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+			// "van-rate": "/wxcomponents/vant/rate/index",
+			// "van-collapse": "/wxcomponents/vant/collapse/index",
+			// "van-collapse-item": "/wxcomponents/vant/collapse-item/index",
+			// "van-picker": "/wxcomponents/vant/picker/index"
+		}
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"color": "#444444",
+		"selectedColor": "#FB7299",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar/find.png",
+			"selectedIconPath": "static/tabbar/find-selected.png",
+			"text": "学习"
+		}, {
+			"pagePath": "pages/fullJob/index",
+			"iconPath": "static/tabbar/cate.png",
+			"selectedIconPath": "static/tabbar/cate-selected.png",
+			"text": "全职"
+		}, {
+			"pagePath": "pages/partTimeJob/partTimeJob",
+			"iconPath": "static/tabbar/cate.png",
+			"selectedIconPath": "static/tabbar/cate-selected.png",
+			"text": "兼职"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/tabbar/my.png",
+			"selectedIconPath": "static/tabbar/my-selected.png",
+			"text": "我的"
+		}]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

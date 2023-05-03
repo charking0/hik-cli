@@ -1,0 +1,75 @@
+<template>
+	<view>
+		<view v-for="(item,index) in list" :key="index">
+			<media-list :item="item" :index="index"></media-list>
+			<view class="flex" style="height:100rpx;">
+				<view class="flex-1 flex align-center justify-center" hover-class="bg-light">修改</view>
+				<view class="flex-1 flex align-center justify-center" hover-class="bg-light"
+				@click="openVideoList(item)">视频</view>
+				<view class="flex-1 flex align-center justify-center" hover-class="bg-light">删除</view>
+			</view>
+			<view class="f-divider"></view>
+		</view>
+	</view>
+</template>
+
+<script>
+	import mediaList from '@/components/common/media-list.vue';
+	export default {
+		components:{
+			mediaList
+		},
+		data() {
+			return {
+				list:[{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				},{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				},{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				},{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				},{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				},{
+					cover:"/static/demo/list2/01.jpg",
+					title:"烟雨风缥缈可可爱爱没有脑袋可可爱爱没有脑袋",
+					create_time:"今天07:00",
+					play_count:"200.1万",
+					danmu_count:"7700"
+				}]
+			}
+		},
+		methods: {
+			openVideoList(item){
+				uni.navigateTo({
+					url: '../user-video-list/user-video-list',
+				});
+			}
+		}
+	}
+</script>
+
+<style>
+
+</style>
